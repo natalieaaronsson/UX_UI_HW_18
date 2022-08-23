@@ -92,7 +92,6 @@ nav {
 .workGrid{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: ;
 }
 .abilis{
     grid-area: abilis;
@@ -106,7 +105,6 @@ nav {
 }
 
 /** Why Me */
-<!--  My UX Skills section coded using CSS flex -->
 .flexContanier{
     display: flex;
     flex-direction: row;
