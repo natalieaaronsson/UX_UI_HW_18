@@ -1,4 +1,5 @@
 /** Back Box */
+
 #blackBox 
 { 
 	width:100%; 
@@ -9,9 +10,31 @@
     z-index: -1; 
 }
 
-
+/** General Text Stuff*/
+p{
+    text-align: center;
+    padding: 2%;
+}
+h1{
+    font-size: 120px;
+}
+h2{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+h5{
+    text-align: center;
+}
 /** Nav */
-
+#intro{
+    position: relative;
+    right: 15%;
+}
+#ux{
+    position: relative;
+    left: 15%
+}
 .inline-block {
     display: inline;
     vertical-align: top;
@@ -89,6 +112,10 @@ nav {
 }
 
 /** My Work */
+
+#work{
+    justify-content: center;
+}
 .workGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -96,6 +123,7 @@ nav {
     grid-gap: 0.2rem;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-bottom: 2vh;
 }
 .abilis{
     grid-area: abilis;
@@ -104,21 +132,22 @@ nav {
     grid-area: reminders;
 }
 #aWords{
-    margin-right: 3vw;
-    margin-left: 3vw;
+    margin-right: 8vw;
+    margin-left: 5vw;
 }
 #rWords{
-    margin-right: 3vw;
+    margin-right: 11vw;
     margin-left: 3vw;
 }
-
 #abilisImg{
     height: 50vh;
     width: auto;
+    padding-left: 5vw;
 }
 #remindersImg{
     height: 50vh;
     width: auto;
+    padding-left: 3vw;
 }
 
 /** Why Me */
@@ -126,17 +155,19 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-left: 3vw;
-    margin-right: 2vw;
     background-color: #E8EEFC;
-    padding: 20px;
-    
-    /*justify-content: center;
-    align-items: center;
-    height: 300px;
-    background-color: #E8EEFC;*/
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-bottom: 3%;
 }
-
+.whyMe{
+    background-color: #E8EEFC;
+}
+.whyMe > h1{
+    background-color: white;
+    padding-bottom: 2vh;
+    justify-content: center;
+}
 .personableResearcher{
     width: 33%;
     align-items: center;
@@ -157,12 +188,40 @@ nav {
 }
 #prImg{
     width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #eImg{
-    width: 70px;  
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
 #aImg{
-    width: 70px;  
+    width: 70px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom{
+    background-color: white;
+    justify-content: center;
+}
+.bottom p{
+    padding-top: 20px;
+    text-align: center;
+}
+button{
+    /*justify-content: center;*/
+    border-radius: 2px;
+    background-color: black
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /** Footer */
@@ -177,3 +236,26 @@ footer {
   color: black;
   text-align: center;
 }
+
+/** Media Query*/
+@media only screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+    .personableResearcher{
+        width: 100%;
+    }
+    .empathy{
+        width: 100%;
+    }
+    .aesthetics{
+        width: 100%;
+    }
+    .workGrid{
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "abilis"
+        "reminders";
+    }
+  }
