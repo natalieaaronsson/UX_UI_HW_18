@@ -91,40 +91,69 @@ nav {
 /** My Work */
 .workGrid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "abilis abilis reminders reminders";
+    grid-gap: 0.2rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .abilis{
     grid-area: abilis;
 }
+.reminders{
+    grid-area: reminders;
+}
+#aWords{
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+#rWords{
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
 
 #abilisImg{
-
+    height: 50vh;
+    width: auto;
 }
 #remindersImg{
-
+    height: 50vh;
+    width: auto;
 }
 
 /** Why Me */
-.flexContanier{
+.flexContainer{
     display: flex;
-    flex-direction: row;
-    /*justify-content: center;*/
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    background-color: #E8EEFC;
+    padding: 20px;
+    
+    /*justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: #E8EEFC;
+    background-color: #E8EEFC;*/
 }
 
-/*.flex-container > div {
-    width: 33%;
-}*/
 .personableResearcher{
     width: 33%;
+    align-items: center;
+    justify-content: center;
 }
 .empathy{
     width: 33%;
+    align-items: center;
+    justify-content: center;
 }
 .aesthetics{
     width: 33%;
+    align-items: center;
+    justify-content: center;
+}
+.imageDiv{
+    justify-content: center;
 }
 #prImg{
     width: 70px;
